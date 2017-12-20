@@ -9,11 +9,25 @@ const App = {
 		App.startComponents();
 		App.startVue();
 	},
+	setFancybox: () => {
+		$("[data-fancybox]").fancybox({
+            infobar    : true,
+            closeBtn   : true,
+            slideShow  : false,
+            fullScreen : false,
+            thumbs     : false,
+            touch      : true,
+            hash       : false,
+			buttons : [
+				'close'
+			]
+        });
+	},
 	constructTemplates: () => {
 		App.templates.product = [];
 		App.templates.product.push('<div class="item well" v-bind:class="{selled : !product.active}">');
 			App.templates.product.push('<h2>{{product.name}}</h2>');
-			App.templates.product.push('<img class="product-image" :src="product.image">');
+			App.templates.product.push('<a data-fancybox="gallery" :data-options="formatFancy(product.name)" :href="product.image"><img class="product-image" :src="product.image"></a>');
 			App.templates.product.push('<div class="description" v-for="desc in product.description">');
 				App.templates.product.push('<div class="description" v-for="(value, key) in desc">');
 					App.templates.product.push('<h1 v-if=\'key == "h1"\'>{{value}}</h1>');
@@ -34,6 +48,9 @@ const App = {
 			methods: {
 				formatNumber: function (value) {
 					return value.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+				},
+				formatFancy: function (product){
+					return '{"caption" : "' + product + '", "id" : "testeaaa"}';
 				}
 			}
 		});
@@ -48,16 +65,11 @@ const App = {
 				}
 			},
 			methods: {
-			    getProducts: function(){
-			        axios.get('./json/products.json').
+			    getDatabase: function(){
+			        axios.get('./json/database.json').
 			            then(response => {
 			                this.products = response.data.products;
-			            });
-			    },
-			    getConfigs: function(){
-			        axios.get('./json/configs.json').
-			            then(response => {
-			                this.configs = response.data.configs;
+			                this.configs  = response.data.configs;
 			                App.vue.setTitlePage();
 			            });
 			    },
@@ -66,8 +78,10 @@ const App = {
 			    }
 			},
 			mounted(){
-				this.getConfigs();
-				this.getProducts();
+				this.getDatabase();
+				setTimeout(function() {
+        			App.setFancybox();
+    			}, 500);
 			}
 		})
 	}

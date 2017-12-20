@@ -10,11 +10,11 @@ body{
 }
 
 a{
-	color: #bbb;
+	color: #000;
 }
 
 a:hover{
-	color: #bbb;
+	color: #000;
 }
 
 h1{
@@ -60,7 +60,7 @@ p{
 
 .my-infos h1{
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 600;
 	margin-bottom: 20px;
 }
 
@@ -103,7 +103,7 @@ p{
 }
 
 .my-row h2{
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 1.7em;
 	margin-bottom: 1em;
 }
@@ -119,7 +119,7 @@ p{
     border-radius: 0px;
     background: transparent;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.7em !important;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
