@@ -39,7 +39,7 @@ const App = {
 			tpl.push('</div>');
 			tpl.push('<h2 class="price">{{ formatNumber(product.price) }}</h2>');
 			tpl.push('<a :href="\'mailto:\' + configs.email + \'?subject=\' + makeSubject(configs.subject, product.name) + \'&body=\' + makeBody(configs.bodyMail, product.name, product.price)"><button>Comprar</button></a>');
-			tpl.push('<a class="whatsapp" :href="\'whatsapp://send?text=\' + makeBody(configs.bodyWhats, product.name, product.price)"><button>WhatsApp</button></a>');
+			tpl.push('<a class="whatsapp" :href="\'whatsapp://send?text=\' + makeBody(configs.bodyWhats, product.name, product.price) + makeSite(configs.url)"><button>WhatsApp</button></a>');
 		tpl.push('</div>');
 		App.templates.product = tpl;
 	},
@@ -59,6 +59,9 @@ const App = {
 				},
 				makeBody: function(body, name, price){
 					return body + name + ' por ' + this.formatNumber(price);
+				},
+				makeSite: function(site){
+					return ' - Acesse aqui: ' + site;
 				}
 			}
 		});
