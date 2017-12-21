@@ -3,8 +3,9 @@
 		"title" : "Bazar do Diogo",
 		"subTitle" : "Olá, bem vindo a mais um Bazar do Diogo",
 		"email" : "diogo@diogocezar.com",
-		"subject" : "Estou interessado no produto ",
-		"body" : "Olá, estou interessado no produto ",
+		"subject" : "[QUERO COMPRAR] ",
+		"bodyMail" : "Olá, estou interessado no produto: ",
+		"bodyWhats" : "Veja este produto: ",
 		"phone" : "+5543996299435",
 		"description" : [
 			{ "p"  : "São produtos que não servem mais para mim, mas que podem ser úteis para você, por um preço abaixo do encontrado no mercado." },
