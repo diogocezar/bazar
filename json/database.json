@@ -19,7 +19,7 @@
 		{
 			"active" : true,
 			"name" : "GABINETE SLIM ITX ATX SENTEY SS1-2420 MINI",
-			"image" : "./assets/images/products/product_gabinete.jpg",
+			"image" : "https://diogocezar.github.io/bazar/assets/images/products/product_gabinete.jpg",
 			"description" : [
 				{ "h4" : "Não Possui Fonte" },
 				{ "p"  : "Modelo: SS1-2420 Slim" },
@@ -52,7 +52,7 @@
 		{
 			"active" : true,
 			"name" : "SMARTPHONE ZENFONE 5 ASUS BRANCO",
-			"image" : "./assets/images/products/product_zenfone.jpg",
+			"image" : "https://diogocezar.github.io/bazar/assets/images/products/product_zenfone.jpg",
 			"description" : [
 				{ "h4" : "Smartphone ZenFone 5 ASUS Branco, com memória RAM de 2GB você consegue executar várias funções no aparelho." },
 				{ "p"  : "Memória interna de 8GB e tecnologia Bluetooth V4.0 para transferência de músicas, fotos e documentos." },
@@ -63,7 +63,7 @@
 		{
 			"active" : false,
 			"name" : "APARELHO DE SOM AIWA NSX-S909",
-			"image" : "./assets/images/products/product_som.jpg",
+			"image" : "https://diogocezar.github.io/bazar/assets/images/products/product_som.jpg",
 			"description" : [
 				{ "h4" : "Produto Usado, Com defeito no volume (físico)." },
 				{ "p"  : "Controle funcionando" }
@@ -73,7 +73,7 @@
 		{
 			"active" : true,
 			"name" : "XBOX 360 4G +11 JOGOS C/2 CONTROLES S/FIO",
-			"image" : "./assets/images/products/product_xbox360.jpg",
+			"image" : "https://diogocezar.github.io/bazar/assets/images/products/product_xbox360.jpg",
 			"description" : [
 				{ "h4" : "Acompanha 11 jogos Originais" },
 				{ "p"  : "Aparelho Bloquado e Original" },
@@ -94,7 +94,7 @@
 		{
 			"active" : true,
 			"name" : "SERVIDOR DELL POWEREDGE T110 II",
-			"image" : "./assets/images/products/product_servidor.jpg",
+			"image" : "https://diogocezar.github.io/bazar/assets/images/products/product_servidor.jpg",
 			"description" : [
 				{ "h4" : "Processador Intel® Xeon® E3-1240v2 3.40 GHz, 8M Cache, Turbo, Quad " },
 				{ "p"  : "Core/8T (69W)" },
@@ -112,7 +112,7 @@
 		{
 			"active" : true,
 			"name" : "GPS GARMIN NUVI 255 W",
-			"image" : "./assets/images/products/product_gps.jpg",
+			"image" : "https://diogocezar.github.io/bazar/assets/images/products/product_gps.jpg",
 			"description" : [
 				{ "h4" : "GPS Garmin Nuvi 255 W" },
 				{ "p"  : "Usado, mas em perfeito estado!" },
