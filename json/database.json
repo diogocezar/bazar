@@ -18,6 +18,18 @@
 	"products" : [
 		{
 			"active" : true,
+			"name" : "Notebook Sony Vaio sve1112m1e",
+			"image" : "https://diogocezar.github.io/bazar/assets/images/products/product_vaio.jpg",
+			"description" : [
+				{ "h4" : "Notebook Sony Vaio" },
+				{ "p"  : "Usado, mas em perfeito estado!" },
+				{ "p"  : "4GB memória" },
+				{ "p"  : "500GB HD" }
+			],
+			"price" : 600
+		},
+		{
+			"active" : true,
 			"name" : "GABINETE SLIM ITX ATX SENTEY SS1-2420 MINI",
 			"image" : "https://diogocezar.github.io/bazar/assets/images/products/product_gabinete.jpg",
 			"description" : [
